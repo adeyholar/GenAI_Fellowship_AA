@@ -1,0 +1,177 @@
+Lesson 6 of 12
+Github Account Creation and Github Desktop Installation
+
+
+What is GitHub?
+GitHub is a cloud-based platform that hosts Git repositories and adds collaborative features, project management tools, and social coding capabilities. Founded in 2008 and acquired by Microsoft in 2018, GitHub has become the world's largest source code host.
+
+GitHub's Role in Development
+Remote Repository Hosting: GitHub stores your Git repositories in the cloud, making them accessible from anywhere and providing backup for your code.
+
+Collaboration Platform: Teams can work together on projects with features like pull requests, code reviews, issue tracking, and project management tools.
+
+Open Source Hub: GitHub hosts millions of open-source projects, making it easy to discover, contribute to, and learn from other developers' work.
+
+Social Coding: Follow developers, star interesting projects, and build a professional portfolio showcasing your contributions
+
+GitHub Account Creation with Two-Factor Authentication Guide (if you do not have one)
+
+Prerequisites
+Before starting, ensure you have:
+
+A valid email address
+
+A smartphone (iOS or Android)
+
+Microsoft Authenticator app installed on your phone
+
+Access to your email for verification
+
+Step 1: Download Microsoft Authenticator
+For Android Users:
+Open Google Play Store
+
+Search for "Microsoft Authenticator"
+
+Select the app by Microsoft Corporation
+
+Tap "Install" and wait for download to complete
+
+Open the app and grant necessary permissions
+
+For iOS Users:
+Open App Store
+
+Search for "Microsoft Authenticator"
+
+Select the app by Microsoft Corporation
+
+Tap "Get" and authenticate with Face ID, Touch ID, or passcode
+
+Open the app and grant necessary permissions
+
+Step 2: Create Your GitHub Account
+Account Registration:
+Open your web browser and go to github.com
+
+Click the "Sign up" button in the top-right corner
+
+Fill in the required information:
+
+Username: Choose a unique username (this will be part of your GitHub URL)
+
+Email address: Use a valid email you have access to
+
+Password: Create a strong password with at least 8 characters
+
+Complete the puzzle verification (if prompted)
+
+Click "Create account"
+
+Email Verification:
+Check your email inbox for a verification email from GitHub
+
+Open the email and click "Verify email address"
+
+This will redirect you back to GitHub
+
+Complete any additional setup prompts (survey questions are optional)
+
+Initial Profile Setup:
+Choose your plan (Free is sufficient for most users)
+
+Select your interests (optional but helps customize your experience)
+
+Click "Complete setup" or "Skip personalization"
+
+Step 3: Enable Two-Factor Authentication
+Access Security Settings:
+Click your profile picture in the top-right corner
+
+Select "Settings" from the dropdown menu
+
+In the left sidebar, click "Password and authentication"
+
+Scroll down to the "Two-factor authentication" section
+
+Click "Enable two-factor authentication"
+
+Choose Authentication Method:
+GitHub will present two options:
+
+Set up using an app (recommended)
+
+Set up using SMS
+
+Click "Set up using an app"
+
+Configure Microsoft Authenticator:
+GitHub will display a QR code on your screen
+
+Open Microsoft Authenticator on your phone
+
+Tap the "+" (plus) button to add a new account
+
+Select "Other account (Google, Facebook, etc.)"
+
+Choose "Scan QR code"
+
+Point your phone camera at the QR code on your computer screen
+
+Wait for the app to scan and add the account
+
+Verify Setup:
+Microsoft Authenticator will now show a 6-digit code for GitHub
+
+Enter this code in the "Verify the code from the app" field on GitHub
+
+Click "Enable"
+
+GitHub will confirm that 2FA is now enabled
+
+GitHub Desktop: Complete Setup Guide
+
+GitHub Desktop is a user-friendly graphical application that simplifies Git version control and GitHub integration without requiring command-line knowledge. This guide covers everything you need to get started.
+
+What is GitHub Desktop?
+GitHub Desktop provides an intuitive interface for managing Git repositories, making version control accessible to developers of all skill levels. It streamlines common Git operations like committing changes, branching, merging, and syncing with remote repositories.
+
+Downloading and Installation
+System Requirements
+Windows: Windows 10 64-bit or later
+
+macOS: macOS 10.15 or later
+
+Memory: Minimum 4GB RAM recommended
+
+Storage: At least 500MB free space
+
+Download Process
+Visit the official GitHub Desktop website at desktop.github.com
+
+The site automatically detects your operating system and shows the appropriate download button
+
+Click "Download for [Your OS]" to get the installer
+
+Wait for the download to complete (typically 100-150MB)
+
+Installation Steps
+For Windows:
+
+Run the downloaded .exe file
+
+The installer will automatically install GitHub Desktop to your Programs folder
+
+Launch the application once installation completes
+
+No additional configuration is required during installation
+
+For macOS:
+
+Open the downloaded .dmg file
+
+Drag the GitHub Desktop icon to your Applications folder
+
+Launch from Applications or Spotlight search
+
+You may need to allow the app in System Preferences > Security & Privacy if prompted
