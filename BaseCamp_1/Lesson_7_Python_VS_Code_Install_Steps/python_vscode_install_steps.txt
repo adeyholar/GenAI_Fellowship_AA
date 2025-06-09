@@ -1,0 +1,40 @@
+Python & VS Code Installation Steps
+
+
+Python installation
+
+Download the Python installer from https://www.python.org/downloads/ 
+
+Choose a stable version in 3.12 or 3.13
+
+Choose the  installer for your Machine type (Windows / MacOs)
+
+Complete the installation
+
+Check the installation
+
+Command Prompt: python --version to see the version installed
+
+Command Prompt: where Python to check the path installed
+
+
+
+VSCode Installation:
+
+Download the VSCode installer from https://code.visualstudio.com/download for your machine.
+
+Complete the installation
+
+Ctrl + Shift + P → Python: select interpreter → Choose the Python installed in your PC
+
+Install extensions: Go to the extension tab and install the following
+
+Python
+
+Python Debugger
+
+Jupyter
+
+
+Ensure this is done and ready before the session starts.
+
