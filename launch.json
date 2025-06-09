@@ -5,14 +5,16 @@
       "name": "Streamlit: Run Current File",
       "type": "python",
       "request": "launch",
-      "module": "streamlit",
-      "args": ["run", "${file}"]
+      "program": "${workspaceFolder}/venv/Scripts/streamlit",
+      "args": ["run", "${file}"],
+      "console": "integratedTerminal"
     },
     {
       "name": "Python: Current File",
       "type": "python",
       "request": "launch",
-      "program": "${file}"
+      "program": "${file}",
+      "console": "integratedTerminal"
     }
   ]
 }
