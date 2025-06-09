@@ -5,13 +5,6 @@
       "name": "Streamlit: Run Current File",
       "type": "python",
       "request": "launch",
-      "console": {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Streamlit: Run Current File",
-      "type": "python",
-      "request": "launch",
       "module": "streamlit",
       "args": ["run", "${file}"]
     },
@@ -20,21 +13,6 @@
       "type": "python",
       "request": "launch",
       "program": "${file}"
-    }
-  ]
-}"integratedTerminal",
-      "program": "${workspaceFolder}/venv/Scripts/streamlit",
-      "args": ["run", "${file}"],
-      "env": {
-        "PYTHONPATH": "${workspaceFolder}/venv/Scripts"
-      }
-    },
-    {
-      "name": "Python: Current File",
-      "type": "python",
-      "request": "launch",
-      "program": "${file}",
-      "console": "integratedTerminal"
     }
   ]
 }
