@@ -1,25 +1,28 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Streamlit: Run Current File",
-      "type": "python",
-      "request": "launch",
-      "console": "integratedTerminal",
-      "program": "${workspaceFolder}/venv/Scripts/streamlit.exe",  // Use .exe for Windows
-      "args": ["run", "${file}"],
-      "env": {
-        "PYTHONPATH": "${workspaceFolder}/venv/Scripts"
-      },
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "name": "Python: Current File",
-      "type": "python",
-      "request": "launch",
-      "program": "${file}",
-      "console": "integratedTerminal",
-      "cwd": "${workspaceFolder}"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File", // This is usually the default, keep it if you want
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Streamlit: Run Current File",
+            "type": "python",
+            "request": "launch",
+            "module": "streamlit", // This tells VS Code to run the 'streamlit' module
+            "args": [
+                "run",
+                "${file}", // This passes the current file's path as an argument to 'streamlit run'
+                "--server.port", "8501", // Optional: Specify a port
+                "--server.headless", "true" // Optional: Prevents opening browser automatically if you want to copy URL
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}", // Sets the current working directory to the directory of the file
+            "justMyCode": true
+        }
+    ]
 }
