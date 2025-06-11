@@ -1,0 +1,5 @@
+List Comprehension Filtering Notes (June 11, 2025):
+- Filtering adds 'if' condition to [expression for item in iterable if condition].
+- Even squares: [x**2 for x in numbers if x%2==0] filters even numbers.
+- Large numbers: [x for x in numbers if x>10] selects values above 10.
+- Divisible by 4: [x for x in numbers if x%4==0 and x%2==0] uses multiple conditions.
