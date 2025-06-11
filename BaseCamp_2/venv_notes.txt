@@ -1,0 +1,7 @@
+Virtual Environment Notes (June 11, 2025):
+- A virtual environment isolates Python dependencies for each project.
+- Created with 'python -m venv venv' in C:\Users\adeol\ai\GenAI_Fellowship_AA.
+- Activated with '.\venv\Scripts\activate'.
+- Contains 'Scripts' (executables), 'Lib' (site-packages), and 'Include'.
+- Installed packages: numpy, pandas, streamlit.
+- Deactivated with 'deactivate'.
