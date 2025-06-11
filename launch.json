@@ -8,7 +8,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
-        },
+        }, // <--- THIS COMMA IS OK IF THERE'S ANOTHER CONFIGURATION BELOW
         {
             "name": "Streamlit: Run Current File",
             "type": "python",
@@ -16,13 +16,11 @@
             "module": "streamlit",
             "args": [
                 "run",
-                "${file}",
-                "--server.port", "8501",
-                "--server.headless", "true"
+                "${file}"
             ],
             "console": "integratedTerminal",
             "cwd": "${fileDirname}",
             "justMyCode": true
-        }
+        }, // <--- THIS COMMA IS AN ERROR IF IT'S THE LAST ITEM IN THE ARRAY
     ]
 }
