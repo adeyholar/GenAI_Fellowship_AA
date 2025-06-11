@@ -1,0 +1,5 @@
+Functions, Modules, Packages Notes (June 11, 2025):
+- Function: A block of code (e.g., greet()) that can be reused.
+- Module: A .py file (e.g., my_module.py) with functions.
+- Package: A directory with __init__.py (e.g., my_package) containing modules.
+- Imported my_module.farewell() and planned my_package.utils.welcome().
