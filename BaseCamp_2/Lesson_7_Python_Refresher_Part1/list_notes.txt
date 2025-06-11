@@ -1,0 +1,5 @@
+List Notes (June 11, 2025):
+- Slicing: [start:stop:step] extracts parts (e.g., [:5], [-3:], [::2]).
+- Comprehension: [x**2 for x in numbers] creates new lists efficiently.
+- Filtering: [x**2 for x in numbers if x%2==0] filters even numbers.
+- Nested: Flattens [[1,2,3],...] with nested comprehension.
