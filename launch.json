@@ -21,6 +21,6 @@
             "console": "integratedTerminal",
             "cwd": "${fileDirname}",
             "justMyCode": true
-        }, // <--- THIS COMMA IS AN ERROR IF IT'S THE LAST ITEM IN THE ARRAY
+        }// <--- THIS COMMA IS AN ERROR IF IT'S THE LAST ITEM IN THE ARRAY
     ]
 }
