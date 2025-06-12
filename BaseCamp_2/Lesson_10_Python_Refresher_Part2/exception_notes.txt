@@ -1,0 +1,5 @@
+Exception Handling Notes (June 12, 2025):
+- try/except catches specific errors (e.g., ZeroDivisionError, TypeError).
+- finally runs regardless of success or failure.
+- Used with file handling to create file if missing.
+- Ensures robust application behavior.
