@@ -1,0 +1,5 @@
+Custom Iterator Notes (June 12, 2025):
+- Custom iterators use __iter__ and __next__.
+- EvenNumberIterator generates even numbers up to a limit.
+- MultiplesIterator filters for multiples (e.g., 3).
+- Raises StopIteration when done, memory-efficient for large data.
