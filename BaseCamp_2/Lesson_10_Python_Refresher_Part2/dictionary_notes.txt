@@ -1,0 +1,6 @@
+Dictionary Notes (June 11, 2025):
+- Dictionaries store key-value pairs (e.g., {"name": "adeola"}).
+- Access with [] or get() for safe defaults.
+- Modify with new keys, updates, or del.
+- Useful for API responses (e.g., status, data, message).
+- Iterate with .items() for key-value pairs.
