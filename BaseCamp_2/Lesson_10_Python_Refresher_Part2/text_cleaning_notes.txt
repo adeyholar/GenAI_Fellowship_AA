@@ -1,0 +1,6 @@
+Text Cleaning Notes (June 12, 2025):
+- strip() removes leading/trailing whitespace.
+- isalpha() filters letters, creating clean text.
+- lower() standardizes case.
+- split() and join() manage word separation.
+- Saved to cleaned_text.txt with os.path, fixed import os error.
