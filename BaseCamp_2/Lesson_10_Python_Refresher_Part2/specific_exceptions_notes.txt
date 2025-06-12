@@ -1,0 +1,6 @@
+Specific Exceptions Notes (June 12, 2025):
+- try/except handles specific errors: ValueError, ZeroDivisionError, etc.
+- finally runs always, checks file status.
+- Caught ValueError for invalid input, ZeroDivisionError for division by zero.
+- Fixed UnboundLocalError by moving file_path outside try block.
+- PermissionError can be tested in a restricted directory.
