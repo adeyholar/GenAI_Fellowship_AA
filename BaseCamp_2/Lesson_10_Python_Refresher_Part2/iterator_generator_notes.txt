@@ -1,0 +1,5 @@
+Iterator/Generator Notes (June 12, 2025):
+- Lists store all data in memory; generators yield one item at a time.
+- yield pauses function, saving memory (e.g., generate_numbers_yield).
+- Iterators use next() to fetch items, raise StopIteration when done.
+- Useful for large datasets or streams.
