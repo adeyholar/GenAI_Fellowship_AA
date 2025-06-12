@@ -1,0 +1,5 @@
+F-string Notes (June 12, 2025):
+- F-strings use f"..." with {variable} for dynamic text.
+- Supports expressions (e.g., {65 - age}).
+- Formatting options (e.g., {:.2f} for 2 decimal places).
+- Conditional logic (e.g., {'Active' if age < 40 else 'Senior'}).
