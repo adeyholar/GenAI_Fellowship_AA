@@ -1,0 +1,5 @@
+Unicode Notes (June 12, 2025):
+- Unicode supports characters like こんにちは, ₹, 😊.
+- Accessed with indices, length counts all chars.
+- Encoded/decoded with UTF-8.
+- File created at [path where unicode_sample.txt is found], fixed with os.path due to CWD issue.
