@@ -1,0 +1,5 @@
+String Notes (June 12, 2025):
+- Slicing: [start:stop:step] extracts parts (e.g., [:5], [7:12]).
+- .format(): Inserts values (e.g., "Name: {}, Age: {}".format(...)).
+- F-strings: f"Welcome, {text}!" for dynamic text.
+- Manipulation: upper(), split(), join(), replace() for text processing.
