@@ -2,7 +2,9 @@ import os
 
 # Function to process user input with specific exception handling
 def process_input(value, divisor):
-    file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'result.txt')
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(script_dir, 'result.txt')
+    print(f"File will be created at: {file_path}")  # Debug print
     try:
         number = float(value)  # Convert to float, may raise ValueError
         result = number / divisor  # May raise ZeroDivisionError
