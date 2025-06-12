@@ -2,25 +2,31 @@ import os
 
 # Use the current script's directory
 script_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(script_dir, 'sample.txt')
+file_path = os.path.join(script_dir, 'unicode_sample.txt')
 
-# Writing to a file
-with open(file_path, 'w') as file:
-    file.write("Hello, this is a test file!\n")
-    file.write("Line 2: Learning file handling.\n")
+# Unicode strings with international characters
+text = "Hello! こんにちは! ₹500 😊"
+print("Original text:", text)
 
-# Reading from a file
-with open(file_path, 'r') as file:
+# Accessing characters
+print("First character:", text[0])
+print("Japanese character:", text[7])  # こ
+print("Rupee symbol:", text[12])  # ₹
+
+# Length of string (counts Unicode characters)
+print("Length:", len(text))
+
+# Encoding and decoding
+encoded = text.encode('utf-8')
+print("UTF-8 encoded:", encoded)
+decoded = encoded.decode('utf-8')
+print("Decoded back:", decoded)
+
+# Writing Unicode to a file
+with open(file_path, 'w', encoding='utf-8') as file:
+    file.write(text)
+
+# Reading Unicode from a file
+with open(file_path, 'r', encoding='utf-8') as file:
     content = file.read()
-    print("File content:")
-    print(content)
-
-# Appending to a file
-with open(file_path, 'a') as file:
-    file.write("Line 3: Appended text.\n")
-
-# Reading line by line
-with open(file_path, 'r') as file:
-    print("\nReading line by line:")
-    for line in file:
-        print(line.strip())
+    print("File content:", content)
