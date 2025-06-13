@@ -1,0 +1,5 @@
+Multiprocessing Notes (June 13, 2025):
+- Multiprocessing handles CPU-bound tasks with separate processes.
+- Sequential took ~4.5s, multiprocessing ~2.2s (4 tasks).
+- multiprocessing.Process() creates processes, start() runs, join() waits.
+- Speedup ~2x, as per session’s 17→11s demo, depends on CPU cores.
