@@ -1,0 +1,5 @@
+Threading Notes (June 13, 2025):
+- Threading improves I/O-bound tasks (e.g., file reading).
+- Sequential took ~6s, threaded ~3s (longest delay).
+- threading.Thread() creates threads, start() runs, join() waits.
+- Speedup ~2x, as per session’s 9→5s demo.
