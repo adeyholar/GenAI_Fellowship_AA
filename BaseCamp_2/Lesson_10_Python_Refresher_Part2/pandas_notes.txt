@@ -1,0 +1,5 @@
+Pandas Notes (June 13, 2025):
+- pd.DataFrame() creates a table from a dictionary.
+- to_datetime() converts strings to dates.
+- mean() and sum() for basic stats.
+- Filtering with df[df['Price'] > 1000] selects rows.
