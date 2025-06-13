@@ -1,0 +1,5 @@
+NumPy Notes (June 12, 2025):
+- NumPy arrays are efficient for numerical data.
+- Created 1D, 2D, and 3D arrays.
+- shape shows dimensions, size counts elements.
+- Modified elements and reshaped arrays.
