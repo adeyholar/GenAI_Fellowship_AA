@@ -11,3 +11,11 @@ Pandas Notes (June 13, 2025):
 - Filtering with df[df['Price'] > 1000] selects rows.
 - Complex filters use & for multiple conditions (e.g., Price > 1000 & Volume < 600000).
 - Date range filtering with >=.
+
+Pandas Notes (June 13, 2025):
+- pd.DataFrame() creates a table from a dictionary.
+- to_datetime() converts strings to dates.
+- groupby() aggregates by Stock (mean Price) or Date (sum Volume).
+- describe() provides statistical summary.
+- agg() computes multiple stats per group.
+
