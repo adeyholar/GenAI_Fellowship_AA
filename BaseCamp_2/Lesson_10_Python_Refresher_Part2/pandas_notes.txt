@@ -3,3 +3,11 @@ Pandas Notes (June 13, 2025):
 - to_datetime() converts strings to dates.
 - mean() and sum() for basic stats.
 - Filtering with df[df['Price'] > 1000] selects rows.
+
+Pandas Notes (June 13, 2025):
+- pd.DataFrame() creates a table from a dictionary.
+- to_datetime() converts strings to dates.
+- mean() and sum() for basic stats.
+- Filtering with df[df['Price'] > 1000] selects rows.
+- Complex filters use & for multiple conditions (e.g., Price > 1000 & Volume < 600000).
+- Date range filtering with >=.
