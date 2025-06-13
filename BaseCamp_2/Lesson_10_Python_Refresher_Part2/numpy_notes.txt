@@ -15,3 +15,10 @@ NumPy Notes (June 13, 2025):
 - Squared 7.5M elements in ~0.03s vs. ~0.25s with Python.
 - Element-wise addition works directly on arrays.
 - Improves performance for large datasets.
+
+NumPy Notes (June 13, 2025):
+- Reshaped 1D arrays to 2x3 with reshape().
+- Fixed vstack error by matching shapes (2x3 for both).
+- Concatenated with vstack() and hstack().
+- Performed addition, dot product, and sqrt() on matrices.
+- Vectorization improves efficiency for large data.
