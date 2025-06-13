@@ -9,3 +9,9 @@ NumPy Notes (June 13, 2025):
 - Vectorized operations (np.sum()) are faster than Python lists.
 - Filtered even numbers with boolean indexing.
 - Speedup depends on system but typically 10-50x.
+
+NumPy Notes (June 13, 2025):
+- Vectorized operations (e.g., **2, +) are faster than loops.
+- Squared 7.5M elements in ~0.03s vs. ~0.25s with Python.
+- Element-wise addition works directly on arrays.
+- Improves performance for large datasets.
