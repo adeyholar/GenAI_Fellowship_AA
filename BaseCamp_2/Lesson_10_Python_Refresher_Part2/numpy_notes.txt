@@ -3,3 +3,9 @@ NumPy Notes (June 12, 2025):
 - Created 1D, 2D, and 3D arrays.
 - shape shows dimensions, size counts elements.
 - Modified elements and reshaped arrays.
+
+NumPy Notes (June 13, 2025):
+- NumPy handles 7.5M elements efficiently with arange().
+- Vectorized operations (np.sum()) are faster than Python lists.
+- Filtered even numbers with boolean indexing.
+- Speedup depends on system but typically 10-50x.
