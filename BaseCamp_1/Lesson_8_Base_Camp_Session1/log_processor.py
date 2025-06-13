@@ -2,8 +2,8 @@ import os
 print("Current Directory in VS Code:", os.getcwd())
 from log_utils import read_log, write_summary, append_log
 
-log_file = r"BaseCamp_1\Lesson_8_Base_Camp_Session1\network.log"  # Raw string with backslashes
-summary_file = r"BaseCamp_1\Lesson_8_Base_Camp_Session1\summary.txt"
+log_file = r"C:\Users\adeol\ai\GenAI_Fellowship_AA\BaseCamp_1\Lesson_8_Base_Camp_Session1\network.log"
+summary_file = r"C:\Users\adeol\ai\GenAI_Fellowship_AA\BaseCamp_1\Lesson_8_Base_Camp_Session1\summary.txt"
 new_entry = "2025-06-13 Router3 ERROR: Timeout"
 
 print("Append Result:", append_log(log_file, new_entry))
