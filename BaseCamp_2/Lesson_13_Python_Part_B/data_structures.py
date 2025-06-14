@@ -1,11 +1,10 @@
-# List of network devices
-devices = ["Router1", "Switch1", "Router2"]
-print("Initial devices:", devices)
+# Dictionary of device statuses
+device_status = {"Router1": "Up", "Switch1": "Down", "Router2": "Up"}
+print("Device statuses:", device_status)
 
-# Add a device
-devices.append("Switch2")
-print("After append:", devices)
+# Update a status
+device_status["Switch1"] = "Up"
+print("After update:", device_status)
 
-# Remove a device
-devices.remove("Router2")
-print("After remove:", devices)
+# Access a value
+print("Router1 status:", device_status["Router1"])
