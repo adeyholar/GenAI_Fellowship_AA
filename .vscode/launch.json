@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "Run Streamlit",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "program": "${file}",
       "args": [],
