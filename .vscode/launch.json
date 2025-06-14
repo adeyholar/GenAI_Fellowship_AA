@@ -2,23 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Streamlit: Run Current File",
-      "type": "debugpy",
-      "request": "launch",
-      "program": "${workspaceFolder}/../virtual_env/genai_pre/Scripts/python.exe",
-      "args": ["-m", "streamlit", "run", "${workspaceFolder}/BaseCamp_1/Lesson_8_Base_Camp_Session1/test_streamlit.py"],
-      "python": "${command:python.interpreterPath}",
-      "cwd": "${workspaceFolder}/BaseCamp_1/Lesson_8_Base_Camp_Session1",
-      "console": "integratedTerminal"
-    },
-    {
-      "name": "Python: Current File",
-      "type": "debugpy",
+      "name": "Run Streamlit",
+      "type": "python",
       "request": "launch",
       "program": "${file}",
-      "python": "${command:python.interpreterPath}",
-      "cwd": "${workspaceFolder}",
-      "console": "integratedTerminal"
+      "args": [],
+      "console": "integratedTerminal",
+      "justMyCode": true
     }
   ]
 }
