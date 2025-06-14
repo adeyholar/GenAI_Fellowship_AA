@@ -23,3 +23,16 @@ print("Formatted status:", formatted_status)
 # Using .format()
 formatted_alt = "Device {} is {} at {}".format(device, status, log_entry[:10])
 print("Formatted alternative:", formatted_alt)
+
+# String methods for cleaning
+dirty_log = "  2025-06-14  Router1  ERROR:  Connection  Lost  "
+cleaned_log = dirty_log.strip()  # Remove leading/trailing spaces
+print("Cleaned log:", cleaned_log)
+
+# Replace unwanted text
+sanitized_log = cleaned_log.replace("ERROR:", "ISSUE:")
+print("Sanitized log:", sanitized_log)
+
+# Check substring
+has_error = "ERROR" in cleaned_log
+print("Contains ERROR:", has_error)
