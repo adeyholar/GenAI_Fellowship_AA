@@ -5,21 +5,20 @@
       "name": "Streamlit: Run Current File",
       "type": "debugpy",
       "request": "launch",
+      "program": "${workspaceFolder}/BaseCamp_1/Lesson_8_Base_Camp_Session1/test_streamlit.py",
+      "python": "C:\\Users\\adeol\\ai\\virtual_env\\genai_pre\\Scripts\\python.exe",
+      "cwd": "${workspaceFolder}/BaseCamp_1/Lesson_8_Base_Camp_Session1",
       "console": "integratedTerminal",
-      "program": "${workspaceFolder}/genai_pre/Scripts/streamlit.exe",
-      "args": ["run", "${file}"],
-      "env": {
-        "PYTHONPATH": "${workspaceFolder}/venv/Scripts"
-      },
-      "cwd": "${workspaceFolder}"
+      "args": ["-m", "streamlit", "run", "${file}"]
     },
     {
       "name": "Python: Current File",
       "type": "debugpy",
       "request": "launch",
       "program": "${file}",
-      "console": "integratedTerminal",
-      "cwd": "${workspaceFolder}"
+      "python": "C:\\Users\\adeol\\ai\\virtual_env\\genai_pre\\Scripts\\python.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
     }
   ]
 }
