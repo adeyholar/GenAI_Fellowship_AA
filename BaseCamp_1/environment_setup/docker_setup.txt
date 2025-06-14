@@ -1,0 +1,3 @@
+Docker Desktop installed on 06/14/2025
+Version: [insert from docker --version, e.g., 20.10.21]
+WSL 2 integration enabled
