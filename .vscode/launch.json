@@ -2,11 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run Streamlit",
+      "name": "Run Streamlit App",
       "type": "debugpy",
       "request": "launch",
-      "program": "${file}",
-      "args": [],
+      "module": "streamlit",
+      "args": ["run", "${file}"],
       "console": "integratedTerminal",
       "justMyCode": true
     }
