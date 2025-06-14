@@ -6,7 +6,7 @@
       "type": "debugpy",
       "request": "launch",
       "console": "integratedTerminal",
-      "program": "${workspaceFolder}/venv/Scripts/streamlit.exe",
+      "program": "${workspaceFolder}/genai_pre/Scripts/streamlit.exe",
       "args": ["run", "${file}"],
       "env": {
         "PYTHONPATH": "${workspaceFolder}/venv/Scripts"
