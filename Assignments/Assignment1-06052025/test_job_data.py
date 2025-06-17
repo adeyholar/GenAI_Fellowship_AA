@@ -23,6 +23,8 @@ if __name__ == "__main__":
         print(analysis.get_avg_exp_per_level('United States'))
         print("\nAverage experience per level for InvalidCountry:")
         print(analysis.get_avg_exp_per_level('InvalidCountry'))
+        print("\nNumber of industries per country:")
+        print(analysis.get_num_industry())
     except ValueError as e:
         print(f"Error: {e}")
         sys.exit(1)

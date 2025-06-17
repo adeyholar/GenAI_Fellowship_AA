@@ -34,7 +34,10 @@ class Job_Data_Analysis:
 
     def get_num_industry(self):
         """Return dict with number of industries per country."""
-        pass
+        if self.df.empty:
+            return {}
+        result = self.df.groupby('company_location')['industry'].nunique().to_dict()
+        return result
 
     def get_benefit_score_range(self):
         """Return DataFrame with min, mean, max benefit score per country."""
