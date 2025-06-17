@@ -19,6 +19,10 @@ if __name__ == "__main__":
         print(analysis.get_salary_range_per_emp_type('United States'))
         print("\nSalary range for InvalidCountry:")
         print(analysis.get_salary_range_per_emp_type('InvalidCountry'))
+        print("\nAverage experience per level for United States:")
+        print(analysis.get_avg_exp_per_level('United States'))
+        print("\nAverage experience per level for InvalidCountry:")
+        print(analysis.get_avg_exp_per_level('InvalidCountry'))
     except ValueError as e:
         print(f"Error: {e}")
         sys.exit(1)

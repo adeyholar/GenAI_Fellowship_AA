@@ -26,7 +26,11 @@ class Job_Data_Analysis:
 
     def get_avg_exp_per_level(self, country):
         """Return dict with average years of experience per experience level for a country."""
-        pass
+        filtered_df = self.df[self.df['company_location'] == country]
+        if filtered_df.empty:
+            return {}
+        result = filtered_df.groupby('experience_level')['years_experience'].mean().to_dict()
+        return result
 
     def get_num_industry(self):
         """Return dict with number of industries per country."""
