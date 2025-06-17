@@ -25,6 +25,11 @@ if __name__ == "__main__":
         print(analysis.get_avg_exp_per_level('InvalidCountry'))
         print("\nNumber of industries per country:")
         print(analysis.get_num_industry())
+        print(analysis.df['industry'].nunique())
+        print("\nUnique industries:")
+        print(analysis.df['industry'].unique().tolist())
+        print("\nBenefit score range per country:")
+        print(analysis.get_benefit_score_range())
     except ValueError as e:
         print(f"Error: {e}")
         sys.exit(1)

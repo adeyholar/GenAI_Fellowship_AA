@@ -41,4 +41,7 @@ class Job_Data_Analysis:
 
     def get_benefit_score_range(self):
         """Return DataFrame with min, mean, max benefit score per country."""
-        pass
+        if self.df.empty:
+            return pd.DataFrame(columns=['company_location', 'min', 'mean', 'max'])
+        result = self.df.groupby('company_location')['benefits_score'].agg(['min', 'mean', 'max']).reset_index()
+        return result
