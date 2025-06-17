@@ -11,3 +11,23 @@ class Job_Data_Analysis:
             raise ValueError("CSV File is empty. Please provide a valid CSV file.")
         except pd.errors.ParserError:
             raise ValueError("CSV File is malformed. Please check the file format.")
+    
+    def get_company_locations(self):
+        """Return list of unique company locations."""
+        return self.df['company_location'].unique().tolist()
+
+    def get_salary_range_per_emp_type(self, country):
+        """Return DataFrame with min, mean, max salary per employment type for a country."""
+        pass
+
+    def get_avg_exp_per_level(self, country):
+        """Return dict with average years of experience per experience level for a country."""
+        pass
+
+    def get_num_industry(self):
+        """Return dict with number of industries per country."""
+        pass
+
+    def get_benefit_score_range(self):
+        """Return DataFrame with min, mean, max benefit score per country."""
+        pass

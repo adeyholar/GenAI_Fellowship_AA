@@ -12,6 +12,9 @@ if __name__ == "__main__":
         print("\nColumns:")
         print(analysis.df.columns)
         print(f"\nNumber of rows: {len(analysis.df)}")
+        print("\nUnique company locations:")
+        print(analysis.get_company_locations())
+        print(len(analysis.get_company_locations()), "unique company locations found.")
     except ValueError as e:
         print(f"Error: {e}")
         sys.exit(1)
