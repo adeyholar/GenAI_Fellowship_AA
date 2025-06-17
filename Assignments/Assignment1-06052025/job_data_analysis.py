@@ -18,7 +18,11 @@ class Job_Data_Analysis:
 
     def get_salary_range_per_emp_type(self, country):
         """Return DataFrame with min, mean, max salary per employment type for a country."""
-        pass
+        filtered_df = self.df[self.df['company_location'] == country]
+        if filtered_df.empty:
+            return pd.DataFrame(columns=['employment_type', 'min', 'mean', 'max'])
+        result = filtered_df.groupby('employment_type')['salary_usd'].agg(['min', 'mean', 'max']).reset_index()
+        return result
 
     def get_avg_exp_per_level(self, country):
         """Return dict with average years of experience per experience level for a country."""

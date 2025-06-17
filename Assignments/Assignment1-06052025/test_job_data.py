@@ -15,6 +15,10 @@ if __name__ == "__main__":
         print("\nUnique company locations:")
         print(analysis.get_company_locations())
         print(len(analysis.get_company_locations()), "unique company locations found.")
+        print("\nSalary range for United States:")
+        print(analysis.get_salary_range_per_emp_type('United States'))
+        print("\nSalary range for InvalidCountry:")
+        print(analysis.get_salary_range_per_emp_type('InvalidCountry'))
     except ValueError as e:
         print(f"Error: {e}")
         sys.exit(1)
