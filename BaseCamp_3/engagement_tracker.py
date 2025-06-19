@@ -1,16 +1,28 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from datetime import datetime
+import json
+import os
 
 app = FastAPI()
 
-# In-memory store for engagement data (replace with database in production)
-engagement_data = []
+# Load or initialize engagement data from a file
+DATA_FILE = "engagement_data.json"
+if os.path.exists(DATA_FILE):
+    with open(DATA_FILE, "r") as f:
+        engagement_data = json.load(f)
+else:
+    engagement_data = []
 
 @app.post("/track/engagement")
-async def track_engagement(page: str, duration: float):
+async def track_engagement(page: str = None, duration: float = None):  # Query parameters
+    if page is None or duration is None:
+        return JSONResponse(status_code=400, content={"detail": "Both 'page' and 'duration' are required query parameters"})
     entry = {"page": page, "duration": duration, "timestamp": datetime.now().isoformat()}
     engagement_data.append(entry)
+    # Save to file for persistence
+    with open(DATA_FILE, "w") as f:
+        json.dump(engagement_data, f)
     return JSONResponse(content={"status": "tracked", "count": len(engagement_data)})
 
 @app.get("/engagement/stats")
